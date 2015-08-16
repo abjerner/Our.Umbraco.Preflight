@@ -1,0 +1,5 @@
+src/packages/
+src/Our.Umbraco.Preflight/bin/
+src/Our.Umbraco.Preflight/obj/
+*.suo
+src/Our.Umbraco.Preflight/App_Data/NuGetBackup/

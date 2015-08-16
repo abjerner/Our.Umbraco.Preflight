@@ -1,0 +1,36 @@
+﻿<div class="preflight" ng-controller="Preflight.Dashboard.Controller">
+    
+    <div ng-repeat="group in groups">
+        
+        <div style=" margin: 0 0 20px 0; font-size: 26px; line-height: 40px; font-weight: normal;">
+            {{group.name}}
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="check in group.checks">
+                        <td>{{check.name}}</td>
+                        <td>{{check.description}}</td>
+                        <td>
+                            <button prevent-default class="btn" ng-click="doCheck(group, check);">Check</button>
+                            <button ng-show="check.canRectify" prevent-default class="btn" disabled>Rectify</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <pre>{{groups | json}}</pre>
+
+</div>

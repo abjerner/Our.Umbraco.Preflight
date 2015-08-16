@@ -1,0 +1,8 @@
+﻿{
+	javascript: [
+		"~/App_Plugins/Preflight/Scripts/Controllers/Dashboard.js"
+	],
+	css: [
+		"~/App_Plugins/Preflight/Styles/Default.css"
+	]
+}
